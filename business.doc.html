@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Graphql schema documentation</title>
+    <title>Business</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -215,7 +215,7 @@
                 AuxiliaryIdentifier
             </a>
         </li>
-        <li  title="Business">
+        <li class="slds-is-active" title="Business">
             <a href="business.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Business
             </a>
@@ -505,9 +505,10 @@
         </div>
     </div>
     <div class="container">
-        
-        <h1 class="slds-text-heading--large">Graphql schema documentation</h1>
-        <div class="slds-text-body--regular">Salesforce App</div>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">Business</h1>
+        <div class="slds-text-body--regular"><p>Schema for business returned records</p>
+</div>
     </div>
 </section>
 <section>
@@ -518,7 +519,18 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">schema</span> {</li><li></li><li><span class="tab"><span class="meta">query</span>: <a class="support type" href="query.doc.html">Query</a></span></li><li></li><li><span class="tab"><span class="meta">mutation</span>: <a class="support type" href="mutation.doc.html">Mutation</a></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Business</span> {</li><li></li><li><span class="tab"><span class="meta">addresses</span>: [<a class="support type" href="address.doc.html">Address</a>!] </span></li><li></li><li><span class="tab"><span class="meta">attention</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">businessLegalForm</span>: <a class="support type" href="businesslegalform.doc.html">BusinessLegalForm</a> </span></li><li></li><li><span class="tab"><span class="meta">businessSector</span>: <a class="support type" href="businesssector.doc.html">BusinessSector</a> </span></li><li></li><li><span class="tab"><span class="meta">businessSectorOther</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">duns</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">ein</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">emails</span>: [<a class="support type" href="email.doc.html">Email</a>!] </span></li><li></li><li><span class="tab"><span class="meta">empowermentCommunity</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">enterpriseZone</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">establishedOn</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">externalIdentifier</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">fullTime</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">homeBased</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">hotZone</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">industryGroup</span>: <a class="support type" href="industrygroup.doc.html">IndustryGroup</a> </span></li><li></li><li><span class="tab"><span class="meta">legacyExternalIdentifier</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">lowIncomeOwned</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">minorityOwned</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">naics</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">name</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">owners</span>: [<a class="support type" href="businessowner.doc.html">BusinessOwner</a>!] </span></li><li></li><li><span class="tab"><span class="meta">phones</span>: [<a class="support type" href="phone.doc.html">Phone</a>!] </span></li><li></li><li><span class="tab"><span class="meta">populationClassification</span>: <a class="support type" href="populationclassification.doc.html">PopulationClassification</a> </span></li><li></li><li><span class="tab"><span class="meta">salutation</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">sic</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">terminatedOn</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">type</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">ubi</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="time.doc.html">Time</a>! </span></li><li></li><li><span class="tab"><span class="meta">veteranOwned</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li></li><li><span class="tab"><span class="meta">websites</span>: [<a class="support type" href="website.doc.html">Website</a>!] </span></li><li></li><li><span class="tab"><span class="meta">womenOwned</span>: <a class="support type" href="boolean.doc.html">Boolean</a> </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="participant.doc.html" title="Participant - A list of items which may be completed">Participant<em>A list of items which may be completed</em></a><li></ul>
     </div>
 </section>
 <footer>

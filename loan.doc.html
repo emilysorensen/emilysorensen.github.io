@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Graphql schema documentation</title>
+    <title>Loan</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -275,7 +275,7 @@
                 LedgerEntry
             </a>
         </li>
-        <li  title="Loan">
+        <li class="slds-is-active" title="Loan">
             <a href="loan.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Loan
             </a>
@@ -505,9 +505,9 @@
         </div>
     </div>
     <div class="container">
-        
-        <h1 class="slds-text-heading--large">Graphql schema documentation</h1>
-        <div class="slds-text-body--regular">Salesforce App</div>
+        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
+        <h1 class="slds-text-heading--large">Loan</h1>
+        <div class="slds-text-body--regular"></div>
     </div>
 </section>
 <section>
@@ -518,7 +518,18 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">schema</span> {</li><li></li><li><span class="tab"><span class="meta">query</span>: <a class="support type" href="query.doc.html">Query</a></span></li><li></li><li><span class="tab"><span class="meta">mutation</span>: <a class="support type" href="mutation.doc.html">Mutation</a></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Loan</span> {</li><li></li><li><span class="tab"><span class="meta">amountApproved</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">auxiliaryIdentifiers</span>: [<a class="support type" href="auxiliaryidentifier.doc.html">AuxiliaryIdentifier</a>!] </span></li><li></li><li><span class="tab"><span class="meta">calculationMethod</span>: <a class="support type" href="calculationmethod.doc.html">CalculationMethod</a> </span></li><li></li><li><span class="tab"><span class="meta">closingDate</span>: <a class="support type" href="date.doc.html">Date</a>! </span></li><li></li><li><span class="tab"><span class="meta">collaterals</span>: [<a class="support type" href="collateral.doc.html">Collateral</a>!] </span></li><li></li><li><span class="tab"><span class="meta">daysInDelinquency</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">debtors</span>: [<a class="support type" href="debtor.doc.html">Debtor</a>!] </span></li><li></li><li><span class="tab"><span class="meta">delinquency</span>: [<a class="support type" href="bigint.doc.html">BigInt</a>!]! </span></li><li></li><li><span class="tab"><span class="meta">delinquencyTotal</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">description</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">externalIdentifier</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">feesBalance</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">firstPaymentDueDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">fixedFeeAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">fundName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">identifier</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">interestBalance</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">interestRate</span>: <a class="support type" href="float.doc.html">Float</a>! </span></li><li></li><li><span class="tab"><span class="meta">lastPaymentAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">lastPaymentDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">lastPaymentPeriod</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">lastTransactionAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">lastTransactionDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">loanApplicationExternalIdentifier</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">loanSector</span>: <a class="support type" href="loansector.doc.html">LoanSector</a> </span></li><li></li><li><span class="tab"><span class="meta">loanStatuses</span>: [<a class="support type" href="loanstatus.doc.html">LoanStatus</a>!] </span></li><li></li><li><span class="tab"><span class="meta">loanStructure</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">loanTypes</span>: [<a class="support type" href="loantypetag.doc.html">LoanTypeTag</a>!] </span></li><li></li><li><span class="tab"><span class="meta">maturityDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">nextPaymentDueDate</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">participationLoanExternalIdentifier</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">participationLoanIdentifier</span>: <a class="support type" href="id.doc.html">ID</a> </span></li><li></li><li><span class="tab"><span class="meta">payeeName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">paymentCalculationFormula</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">paymentDueAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">paymentDueDate</span>: <a class="support type" href="date.doc.html">Date</a> </span></li><li></li><li><span class="tab"><span class="meta">paymentFrequency</span>: <a class="support type" href="paymentfrequency.doc.html">PaymentFrequency</a>! </span></li><li></li><li><span class="tab"><span class="meta">paymentPeriods</span>: <a class="support type" href="int.doc.html">Int</a>! </span></li><li></li><li><span class="tab"><span class="meta">payoffAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">periodicFeeAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a> </span></li><li></li><li><span class="tab"><span class="meta">principalBalance</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">subfundName</span>: <a class="support type" href="string.doc.html">String</a> </span></li><li></li><li><span class="tab"><span class="meta">totalDisbursed</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">totalPaymentAmount</span>: <a class="support type" href="bigint.doc.html">BigInt</a>! </span></li><li></li><li><span class="tab"><span class="meta">transactions</span>: [<a class="support type" href="transaction.doc.html">Transaction</a>!] </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="time.doc.html">Time</a>! </span></li><li>}</li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>

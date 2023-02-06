@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Graphql schema documentation</title>
+    <title>Boolean</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -45,7 +45,7 @@
                 BigInt
             </a>
         </li>
-        <li  title="Boolean">
+        <li class="slds-is-active" title="Boolean">
             <a href="boolean.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Boolean
             </a>
@@ -505,9 +505,10 @@
         </div>
     </div>
     <div class="container">
-        
-        <h1 class="slds-text-heading--large">Graphql schema documentation</h1>
-        <div class="slds-text-body--regular">Salesforce App</div>
+        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
+        <h1 class="slds-text-heading--large">Boolean</h1>
+        <div class="slds-text-body--regular"><p>Represents <code>true</code> or <code>false</code> values.</p>
+</div>
     </div>
 </section>
 <section>
@@ -518,7 +519,26 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">schema</span> {</li><li></li><li><span class="tab"><span class="meta">query</span>: <a class="support type" href="query.doc.html">Query</a></span></li><li></li><li><span class="tab"><span class="meta">mutation</span>: <a class="support type" href="mutation.doc.html">Mutation</a></span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Boolean</span></li></ul></code>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h2 id="require-by" class="graphdoc-section__title slds-text-heading--medium slds-m-top--small">
+            <a href="#require-by">
+                <i class="material-icons">link</i>
+            </a>
+            Require by
+        </h2>
+        <ul class="require-by"><li><a href="address.doc.html" title="Address - A list of items which may be completed">Address<em>A list of items which may be completed</em></a><li><li><a href="addressinput.doc.html" title="AddressInput - Attributes for creating or updating address records">AddressInput<em>Attributes for creating or updating address records</em></a><li><li><a href="business.doc.html" title="Business - Schema for business returned records">Business<em>Schema for business returned records</em></a><li><li><a href="businessinput.doc.html" title="BusinessInput - Attributes for creating or updating a business">BusinessInput<em>Attributes for creating or updating a business</em></a><li><li><a href="businessowner.doc.html" title="BusinessOwner - Schema for business owner returned records">BusinessOwner<em>Schema for business owner returned records</em></a><li><li><a href="businessownerinput.doc.html" title="BusinessOwnerInput - Attributes for creating or updating business owners">BusinessOwnerInput<em>Attributes for creating or updating business owners</em></a><li><li><a href="clientmanagerintake.doc.html" title="ClientManagerIntake - ">ClientManagerIntake<em>null</em></a><li><li><a href="clientmanagerintakeinput.doc.html" title="ClientManagerIntakeInput - ">ClientManagerIntakeInput<em>null</em></a><li><li><a href="debtor.doc.html" title="Debtor - ">Debtor<em>null</em></a><li><li><a href="email.doc.html" title="Email - A list of items which may be completed">Email<em>A list of items which may be completed</em></a><li><li><a href="emailinput.doc.html" title="EmailInput - Attributes for creating or updating email records">EmailInput<em>Attributes for creating or updating email records</em></a><li><li><a href="loanapplicant.doc.html" title="LoanApplicant - ">LoanApplicant<em>null</em></a><li><li><a href="loanapplicantinput.doc.html" title="LoanApplicantInput - Attributes for creating or updating loan applicants">LoanApplicantInput<em>Attributes for creating or updating loan applicants</em></a><li><li><a href="loanapplication.doc.html" title="LoanApplication - ">LoanApplication<em>null</em></a><li><li><a href="loanapplicationinput.doc.html" title="LoanApplicationInput - Attributes for creating or updating loan applications">LoanApplicationInput<em>Attributes for creating or updating loan applications</em></a><li><li><a href="loaninformation.doc.html" title="LoanInformation - ">LoanInformation<em>null</em></a><li><li><a href="loaninformationinput.doc.html" title="LoanInformationInput - ">LoanInformationInput<em>null</em></a><li><li><a href="phone.doc.html" title="Phone - ">Phone<em>null</em></a><li><li><a href="phoneinput.doc.html" title="PhoneInput - Attributes for creating or updating phone records">PhoneInput<em>Attributes for creating or updating phone records</em></a><li><li><a href="query.doc.html" title="Query - ">Query<em>null</em></a><li><li><a href="website.doc.html" title="Website - ">Website<em>null</em></a><li><li><a href="websiteinput.doc.html" title="WebsiteInput - Attributes for creating or updating website records">WebsiteInput<em>Attributes for creating or updating website records</em></a><li><li><a href="directive.spec.html" title="__Directive - A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
+
+In some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.">__Directive<em>A Directive provides a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
+
+In some cases, you need to provide options to alter GraphQL's execution behavior in ways field arguments will not suffice, such as conditionally including or skipping a field. Directives provide this by describing additional information to the executor.</em></a><li><li><a href="enumvalue.spec.html" title="__EnumValue - One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.">__EnumValue<em>One possible value for a given Enum. Enum values are unique values, not a placeholder for a string or numeric value. However an Enum value is returned in a JSON response as a string.</em></a><li><li><a href="field.spec.html" title="__Field - Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.">__Field<em>Object and Interface types are described by a list of Fields, each of which has a name, potentially a list of arguments, and a return type.</em></a><li><li><a href="type.spec.html" title="__Type - The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.
+
+Depending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.">__Type<em>The fundamental unit of any GraphQL Schema is the type. There are many kinds of types in GraphQL as represented by the `__TypeKind` enum.
+
+Depending on the kind of a type, certain fields describe information about that type. Scalar types provide no information beyond a name and description, while Enum types provide their values. Object and Interface types provide the fields they describe. Abstract types, Union and Interface, provide the Object types possible at runtime. List and NonNull types compose other types.</em></a><li></ul>
     </div>
 </section>
 <footer>
