@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./styles/graphdoc.css" />
-    <title>Phone</title>
+    <title>Percentage</title>
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet"><link type="text/css" rel="stylesheet" href="./assets/code.css" /><link type="text/css" rel="stylesheet" href="./assets/require-by.css" />
 </head>
 <body class="slds-scrollable--y">
@@ -75,7 +75,7 @@
                 Money
             </a>
         </li>
-        <li  title="Percentage">
+        <li class="slds-is-active" title="Percentage">
             <a href="percentage.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Percentage
             </a>
@@ -345,7 +345,7 @@
                 Person
             </a>
         </li>
-        <li class="slds-is-active" title="Phone">
+        <li  title="Phone">
             <a href="phone.doc.html" class="slds-navigation-list--vertical__action slds-text-link--reset slds-truncate">
                 Phone
             </a>
@@ -535,8 +535,8 @@
         </div>
     </div>
     <div class="container">
-        <p class="slds-text-title--caps slds-text-color--weak">OBJECT</p>
-        <h1 class="slds-text-heading--large">Phone</h1>
+        <p class="slds-text-title--caps slds-text-color--weak">SCALAR</p>
+        <h1 class="slds-text-heading--large">Percentage</h1>
         <div class="slds-text-body--regular"></div>
     </div>
 </section>
@@ -548,7 +548,7 @@
             </a>
             GraphQL Schema definition
         </h2>
-        <code class="highlight"><ul class="code" style="padding-left:42px"><li><span class="keyword operator ts">type</span> <span class="identifier">Phone</span> {</li><li></li><li><span class="tab"><span class="meta">comment</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">deviceType</span>: <a class="support type" href="device.doc.html">Device</a> </span></li><li></li><li><span class="tab"><span class="meta">externalIdentifier</span>: <a class="support type" href="id.doc.html">ID</a>! </span></li><li></li><li><span class="tab"><span class="meta">number</span>: <a class="support type" href="string.doc.html">String</a>! </span></li><li></li><li><span class="tab"><span class="meta">primary</span>: <a class="support type" href="boolean.doc.html">Boolean</a>! </span></li><li></li><li><span class="tab"><span class="meta">updatedAt</span>: <a class="support type" href="time.doc.html">Time</a>! </span></li><li></li><li><span class="tab"><span class="meta">usageType</span>: <a class="support type" href="usage.doc.html">Usage</a> </span></li><li>}</li></ul></code>
+        <code class="highlight"><ul class="code" style="padding-left:28px"><li><span class="keyword operator ts">scalar</span> <span class="identifier">Percentage</span></li></ul></code>
     </div>
 </section>
 <section>
@@ -559,7 +559,7 @@
             </a>
             Require by
         </h2>
-        <ul class="require-by"><li><a href="business.doc.html" title="Business - Schema for business returned records">Business<em>Schema for business returned records</em></a><li><li><a href="person.doc.html" title="Person - Schema for returned Person record">Person<em>Schema for returned Person record</em></a><li></ul>
+        <ul class="require-by"><li><a href="cdfi.doc.html" title="Cdfi - ">Cdfi<em>null</em></a><li></ul>
     </div>
 </section>
 <footer>
