@@ -1,0 +1,13 @@
+{
+  "given-name": { "value": "Emily", "url": "" },
+  "family-name": {"value":"Sorensen", "url": ""},
+  "job": { "value":"developer", "url": "" },
+  "title-current": {"value":"Database Developer", "url": ""},
+  "organization-current": {"value":"Global Fund for Women", "url": "https://www.globalfundforwomen.org/"},
+  "date-current": {"value":"January 2026", "url": ""},
+  "organization-prior": {"Craftsman Technology Group", "url": "https://www.craftsmantech.com/"},
+  "date-prior": {"value":"2020-2026", "url": ""},
+  "city-current": {"value":"New York City", "url":""},
+  "co-inhabitants": [{"value":"partner", "url": "https://sanforddiehl.com/", "quantity":1}, {"value":"cats", "url": "https://en.wikipedia.org/wiki/Henry_A._Wallace", "quantity":2}],
+  "contact-via": [{"value":"GitHub","url":"https://github.com/emilysorensen/"},{"value":"LinkedIn", "url": "https://www.linkedin.com/in/emilysorensen/"}]}
+}

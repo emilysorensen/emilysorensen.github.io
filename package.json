@@ -2,6 +2,17 @@
   "dependencies": {
     "eslint": "^10.0.3",
     "eslint-plugin-prettier": "^5.5.5",
+    "http-server": "^14.1.1",
     "prettier": "^3.8.1"
-  }
+  },
+  "name": "emilysorensen.github.io",
+  "description": "website<br /> hello world!",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server -c-1"
+  },
+  "author": "",
+  "license": "ISC"
 }
